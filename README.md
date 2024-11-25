@@ -1,7 +1,7 @@
-# Flutter course defaults for the App Brewery's Flutter Course
+# Flutter course updates for the App Brewery's Flutter Course
  This repo is meant to help us students with the outdated flutter and flutter recources from the AppBrewery's (https://appbrewery.com/)
  excellent course flutter bootcamp with dart.
- 
+
  https://github.com/londonappbrewery/Flutter-Course-Resources
 
  I have updated the code to use the actual version of Flutter (pubspec.yaml) and Widgets (like TextButton instead of FlatButton). 
