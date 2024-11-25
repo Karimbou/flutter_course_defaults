@@ -6,22 +6,35 @@ class BMICalculator extends StatelessWidget {
   const BMICalculator({super.key});
   @override
   Widget build(BuildContext context) {
-    const appName = "BMI Caluculator";
+    const appName = "BMI Calculator";
     return MaterialApp(
       title: appName,
-      theme: ThemeData.dark(
-        // I let this for you to know that we are you using Material 3. It is needed just for Flutter prior 3.16
+      theme: ThemeData(
+        // for flutter prior than 3.16 to use with Material 3
         useMaterial3: true,
-        // Theme code for Material 3 was changed. I hope this new template will meet the course requirements but the deafoult appareance is different
-        // This is for a light Theme Z to use it you have to delete the .dark from ThemeData and uncomment
-        // colorScheme: ColorScheme.fromSeed(
-        //        seedColor: Colors.blue, brightness: Brightness.light)
-        //    .copyWith(surfaceTint: Colors.blue),
-        // appBarTheme: AppBarTheme(
-        //     elevation: 4.0, shadowColor: Theme.of(context).colorScheme.shadow),
-        //  textTheme: TextTheme(
-        //    displayLarge:
-        //          TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold)),
+        // Material 3 has a new way to deal with ColorSchemes / primaryColor will not work anymore
+        colorScheme: ColorScheme.fromSeed(
+                // the seedcolor sets the color of the scheme
+                seedColor: Colors.blue,
+                // brightness: Brightness.dark,
+                dynamicSchemeVariant: DynamicSchemeVariant.fidelity)
+            .copyWith(
+          // surface sets the color for the background of the theme like background: Colors.
+          surface: Colors.white,
+          onSurface: Colors.blue,
+          // surfaceContainerHigh: Colors.red
+        ),
+        appBarTheme: AppBarTheme(
+          elevation: 4.0,
+          shadowColor: Theme.of(context).colorScheme.shadow,
+          // backgrondColor sets a custom color and overrides the one from the theme
+          backgroundColor: Colors.blue,
+          titleTextStyle: TextStyle(
+              color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.bold),
+        ),
+        textTheme: TextTheme(
+            displayLarge:
+                TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold)),
       ),
       home: InputPage(title: appName),
     );
