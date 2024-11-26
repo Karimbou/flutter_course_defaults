@@ -16,7 +16,8 @@ class BMICalculator extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(
                 // the seedcolor sets the color of the scheme
                 seedColor: Colors.blue,
-                // brightness: Brightness.dark,
+                // define the default Brightness (light / dark)
+                brightness: Brightness.light,
                 dynamicSchemeVariant: DynamicSchemeVariant.fidelity)
             .copyWith(
           // surface sets the color for the background of the theme like background: Colors.
@@ -24,6 +25,18 @@ class BMICalculator extends StatelessWidget {
           onSurface: Colors.blue,
           // surfaceContainerHigh: Colors.red
         ),
+        // define your defaulf Text Theme to use your text styling
+        textTheme: TextTheme(
+            displayLarge: TextStyle(
+              fontSize: 72.0,
+              fontWeight: FontWeight.bold,
+            ),
+            titleLarge: TextStyle(
+              fontSize: 30.0,
+            ),
+            bodyMedium: TextStyle(
+              fontSize: 20.0,
+            )),
         appBarTheme: AppBarTheme(
           elevation: 4.0,
           shadowColor: Theme.of(context).colorScheme.shadow,
@@ -32,9 +45,6 @@ class BMICalculator extends StatelessWidget {
           titleTextStyle: TextStyle(
               color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.bold),
         ),
-        textTheme: TextTheme(
-            displayLarge:
-                TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold)),
       ),
       home: InputPage(title: appName),
     );
