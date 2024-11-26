@@ -16,7 +16,7 @@ We’re going to make a Body Mass Index Calculator inspired by the beautiful des
 
 ## What you will learn
 
-- How to use Flutter themes to create coherent branding. 
+- How to use Flutter themes to create coherent branding. (updated)
 - How to create multi-page apps using Flutter Routes and Navigator.
 - How to extract and refactor Flutter Widgets with a click of the button. 
 - How to pass functions as parameters and fields.
@@ -30,3 +30,13 @@ We’re going to make a Body Mass Index Calculator inspired by the beautiful des
 >This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
 ![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+
+## Material 3
+"As of the Flutter 3.16 release, Material 3 is Flutter's default theme.
+If you don't specify a theme in the constructor, Flutter creates a default theme for you."
+https://docs.flutter.dev/cookbook/design/themes 
+
+It is a bit more complex to control the colours etc of Material 3. I added some comments for us to find the propertiies which we need to change. 
+
+To learn more about Material 3, check out the official Material 3 documentation.
+https://m3.material.io/develop/flutter
