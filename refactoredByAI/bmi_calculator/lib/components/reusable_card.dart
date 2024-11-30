@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
 
 class ReusableCard extends StatelessWidget {
-  const ReusableCard(
-      {super.key, required this.colour, this.cardchild, this.onPress});
+  // This class represents a reusable card that can be used in various parts of the app.
+  // It has three properties: colour, cardchild, and onPress.
+  const ReusableCard({
+    super.key,
+    required this.colour,
+    this.cardchild,
+    this.onPress,
+  });
   // final makes the property immutable
   final Color colour;
+
   // Widget can't be null so the explicit non-null type ? is set
   final Widget? cardchild;
-  // to make the funtion gives back a void which is the one we need you have to change Funtion to a defined Funtion called GestureTapCallback
-  //If you want to make sure that onPress is always a function with the correct signature, change its type to GestureTapCallback?:
+  // To make the function gives back a void which is the one we need you have to change Function to a defined Function called GestureTapCallback.
+  // If you want to make sure that onPress is always a function with the correct signature, change its type to GestureTapCallback?:
   final GestureTapCallback? onPress;
 
   @override
