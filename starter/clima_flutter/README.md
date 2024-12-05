@@ -33,7 +33,10 @@ We’re going to make a weather app inspired by the beautiful designs made by [O
 
 ![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
 
-* The Code is now uodated to Flutter 3.1.6 and the Buttons changed to its actual equivalents  
+* The Code is now uodated to Flutter 3.24.5 (^3.5.4)and the Buttons changed to its actual equivalents  
 
 https://docs.flutter.dev/release/breaking-changes/buttons
+
+See Flutter release notes
+https://docs.flutter.dev/release/release-notes
 
